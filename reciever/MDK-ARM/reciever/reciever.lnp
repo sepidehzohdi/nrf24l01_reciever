@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"reciever\startup_stm32f103xb.o"
+"reciever\main.o"
+"reciever\stm32f1xx_it.o"
+"reciever\stm32f1xx_hal_msp.o"
+"reciever\stm32f1xx_hal_gpio_ex.o"
+"reciever\stm32f1xx_hal_spi.o"
+"reciever\stm32f1xx_hal_spi_ex.o"
+"reciever\stm32f1xx_hal_tim.o"
+"reciever\stm32f1xx_hal_tim_ex.o"
+"reciever\stm32f1xx_hal_uart.o"
+"reciever\stm32f1xx_hal.o"
+"reciever\stm32f1xx_hal_rcc.o"
+"reciever\stm32f1xx_hal_rcc_ex.o"
+"reciever\stm32f1xx_hal_gpio.o"
+"reciever\stm32f1xx_hal_dma.o"
+"reciever\stm32f1xx_hal_cortex.o"
+"reciever\stm32f1xx_hal_pwr.o"
+"reciever\stm32f1xx_hal_flash.o"
+"reciever\stm32f1xx_hal_flash_ex.o"
+"reciever\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "reciever\reciever.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "reciever.map" -o reciever\reciever.axf
