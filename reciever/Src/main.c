@@ -51,7 +51,7 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-
+char data[50];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
